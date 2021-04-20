@@ -19,8 +19,15 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@hooks/*": ["hooks/*"]
-    }
+    },
+    "types": ["cypress", "@testing-library/cypress"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "twin.d.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "twin.d.ts",
+    "jest.setup.js"
+  ],
   "exclude": ["node_modules"]
 }
